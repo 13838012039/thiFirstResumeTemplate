@@ -1,0 +1,193 @@
+/* 公共样式 */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 导航栏部分样式 */
+
+.top-nav-bar {
+    position: fixed;
+    background: black;
+    width: 100%;
+}
+
+.top-nav-bar-inner {
+    padding: 20px 16px;
+}
+
+.top-nav-bar>.top-nav-bar-inner>nav {
+    padding-top: 7px;
+    float: right;
+}
+
+.top-nav-bar>.top-nav-bar-inner>.logo {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.top-nav-bar>.top-nav-bar-inner>nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav-bar>.top-nav-bar-inner>nav>ul>li {
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.top-nav-bar>.top-nav-bar-inner>nav>ul>li>a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border: 3px solid transparent;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+}
+
+.top-nav-bar>.top-nav-bar-inner>nav>ul>li>a:hover {
+    border: 3px solid red;
+}
+
+.top-nav-bar .logo {
+    font-size: 24px;
+    font-family: "Arial Black"
+}
+
+
+/* banner图部分 */
+
+.banner {
+    background: url(../img/rs-cover-2-2-1-1.jpg);
+    height: 515px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner>.mask {
+    height: 515px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* main部分 */
+
+
+/* card部分 */
+
+.user-card {
+    max-width: 960px;
+    color: black;
+    background: white;
+    margin: 0 auto;
+}
+
+.hello {
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 16px;
+    background: blueviolet;
+    line-height: 22px;
+    position: relative;
+}
+
+.hello>.triangle {
+    display: block;
+    width: 0;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-left: 10px solid blueviolet;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+}
+
+.text-and-picture {
+    padding: 50px;
+}
+
+.text-and-picture>.text {
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+}
+
+.text-and-picture>.picture {
+    float: left;
+}
+
+.text-and-picture .text h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.text-and-picture .text hr {
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
+
+.text dl dd,
+.text dl dt {
+    float: left;
+}
+
+.text dl dt {
+    width: 30%;
+    font-weight: bold;
+}
+
+.text dl dd {
+    padding: 5px 0;
+    width: 70%;
+    color: #666;
+}
+
+.user-card svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+    vertical-align: top;
+}
+
+.user-card .media {
+    padding: 20px 0;
+    background: rebeccapurple;
+}
+
+.user-card .media a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 16px;
+}
+
+.user-card .media a:hover {
+    border-radius: 50%;
+    background: black;
+}
+
+.user-card .media {
+    text-align: center;
+}
